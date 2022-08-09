@@ -4,8 +4,9 @@ const theme = {
   borderRadius: "5px",
 
   colors: {
-    main: "#0000002e",
+    main: "#02b6fb",
     secondary: "#ffa50066",
+    secondaryBold: "#ffa500",
     grey: "#00000047",
   },
 };

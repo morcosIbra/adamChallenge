@@ -10,8 +10,8 @@ export const Wrapper = styled.div`
   }
 `;
 export const CardWrap = styled.div`
-  border: 1px solid #0000002e;
-  border-left: 3px solid #02b6fb;
+  border: 1px solid ${({ theme }) => theme.colors.grey};
+  border-left: 3px solid ${({ theme }) => theme.colors.main};
   border-radius: 5px;
   min-width: 100%;
   display: flex;
@@ -57,10 +57,10 @@ line - height: 1px;
 export const Status = styled.span`
   width: max-content;
   margin-left: auto;
-  background-color: #ffa50066;
+  background-color: ${({ theme }) => theme.colors.secondary};
   padding: 5px;
   border-radius: 40px;
-  color: orange;
+  color: ${({ theme }) => theme.colors.secondaryBold};
 `;
 export const LowerSection = styled.div`
   display: flex;
@@ -73,7 +73,7 @@ export const CardButton = styled.button`
   padding: 0px 20px 0px 20px;
   border-radius: 10px;
   background: white;
-  border: 1px solid #00000047;
+  border: 1px solid ${({ theme }) => theme.colors.grey};
   font-weight: bold;
   cursor: pointer;
 `;
